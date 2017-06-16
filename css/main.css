@@ -282,20 +282,31 @@ textarea {
 }
 
 body {
-  background: #F0F0F0;
-  overflow: hidden;
+  background: #A1CEB7;
+  font-family: "futura-pt";
+  weight: 400;
+}
+
+.outline {
+  border: 20px white solid;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+
 }
 
 h1 {
-  font-family: "Tungsten A", "Tungsten B";
+
   font-style: normal;
   font-weight: 500;
-  font-size: 180px;
+  font-size: 100px;
   letter-spacing: 7px;
   line-height: .9em;
-  margin-bottom: 0;
-  margin-left: 40px;
-
+  margin-bottom: 50px;
+  /*text-align: right;*/
+  color: white;
   /*font-family: "Surveyor SSm A", "Surveyor SSm B";
   font-style: normal;
   font-weight: 300;*/
@@ -344,7 +355,7 @@ h1 {
 .image-container {
   position: fixed;
   bottom: 0;
-  right: 0;
+  left: 0;
   outline: none;
 }
 img {
@@ -353,25 +364,25 @@ img {
 a {
   outline:none;
 }
-.video-button svg{
-    top: 40px;
-    position: absolute;
-    /*margin-left: -26px;*/
-    z-index: 9;
-    left: 40px;
 
-  }
 .relative {
   position: relative;
 }
 
-.video-button {
-  position: absolute;
-    z-index: 10;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+a.video-button {
+  background: white;
+  color: #A1CEB7;
+  padding: 25px 50px;
+  border-radius: 44px;
+  text-decoration: none;
+  font-size: 24px;
+  display: inline-block;
+  letter-spacing: 1px;
+  transition: all .3s ease-in
+}
+a.video-button:hover {
+  /*background: rgba(255,255,255,.8);*/
+  box-shadow: 0 0 100px rgba(0,0,0,.15);
 }
 
 .name {
@@ -388,12 +399,20 @@ a {
 
 }
 .name-container {
-  padding: 140px 60px 0;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  z-index: 100;
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1024px) {
+.left-image {
+  max-width: 500px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .name-container {
-    padding-top: 100px;
+    top: 35px;
+    right: 100px;
   }
   .name {
     width: 100%;
@@ -401,26 +420,24 @@ a {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   h1 {
-    font-size: 100px;
-    margin-top: 60px;
+    font-size: 50px;
   }
-  .name {
-    display: none;
+  .outline {
+    border-width: 15px;
   }
-  .name-2 {
-    display: block;
+  a.video-button {
+    font-size: 18px;
+    padding: 20px 30px;
   }
+
   .name-container {
-    padding-top: 80px;
+    right: 35px;
   }
-  .image-container {
-    width: 100%;
-    left: 0;
-  }
+
   .image-container img {
-    max-width: 100%;
-    width: 100%;
+    max-width: 350px;
+    width: 90%;
   }
 }
