@@ -423,6 +423,8 @@ a.video-button:hover {
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 40px;
   }
   .outline {
     border-width: 15px;
@@ -433,7 +435,8 @@ a.video-button:hover {
   }
 
   .name-container {
-    right: 35px;
+    right: 60px;
+    top: 55px;
   }
 
   .image-container img {
