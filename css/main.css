@@ -409,7 +409,7 @@ a.video-button:hover {
   max-width: 500px;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 669px) and (max-width: 1024px) {
   .name-container {
     top: 35px;
     right: 100px;
