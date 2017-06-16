@@ -283,6 +283,7 @@ textarea {
 
 body {
   background: #F0F0F0;
+  overflow: hidden;
 }
 
 h1 {
@@ -291,11 +292,15 @@ h1 {
   font-weight: 500;
   font-size: 180px;
   letter-spacing: 7px;
+  line-height: .9em;
+  margin-bottom: 0;
+  margin-left: 40px;
 
   /*font-family: "Surveyor SSm A", "Surveyor SSm B";
   font-style: normal;
   font-weight: 300;*/
 }
+
 
 
 .intrinsic-container {
@@ -340,7 +345,13 @@ h1 {
   position: fixed;
   bottom: 0;
   right: 0;
-
+  outline: none;
+}
+img {
+  outline:none;
+}
+a {
+  outline:none;
 }
 .video-button svg{
     top: 26px;
@@ -361,4 +372,21 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 100px;
+    margin-top: 60px;
+  }
+  .image-container {
+    width: 100%;
+    bottom: auto;
+    right: auto;
+    position: relative;
+    margin-top: 60px;
+  }
+  .image-container img {
+    max-width: 100%;
+  }
 }
