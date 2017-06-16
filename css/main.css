@@ -391,6 +391,16 @@ a {
   padding: 140px 60px 0;
 }
 
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .name-container {
+    padding-top: 100px;
+  }
+  .name {
+    width: 100%;
+    max-width: 860px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   h1 {
     font-size: 100px;
