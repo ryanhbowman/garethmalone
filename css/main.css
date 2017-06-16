@@ -291,6 +291,10 @@ h1 {
   font-weight: 500;
   font-size: 180px;
   letter-spacing: 7px;
+
+  font-family: "Surveyor SSm A", "Surveyor SSm B";
+  font-style: normal;
+  font-weight: 300;
 }
 
 
